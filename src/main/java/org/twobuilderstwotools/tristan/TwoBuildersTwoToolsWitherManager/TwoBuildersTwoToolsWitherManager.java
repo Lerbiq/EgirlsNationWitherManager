@@ -81,13 +81,13 @@ public class TwoBuildersTwoToolsWitherManager extends JavaPlugin implements List
         if (LocX < 0){
             //Negative x
             if (LocZ < 0) {
-                if (LocX > radius && LocZ > radius) {
+                if (LocX > -radius && LocZ > -radius) {
                     return false;
                 } else {
                     return true;
                 }
             } else {
-                if (LocX > radius && LocZ < radius) {
+                if (LocX > -radius && LocZ < radius) {
                     return false;
                 } else {
                     return true;
@@ -95,7 +95,7 @@ public class TwoBuildersTwoToolsWitherManager extends JavaPlugin implements List
             }
         } else if (LocZ < 0) {
             //Negative z
-            if (LocX < radius && LocZ > radius) {
+            if (LocX < radius && LocZ > -radius) {
                 return false;
             } else{
                 return true;
